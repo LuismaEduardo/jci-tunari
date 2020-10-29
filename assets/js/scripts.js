@@ -235,3 +235,9 @@
 	AOS.init();
 		 
 })(jQuery);
+const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+  "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+];
+const d = new Date();
+document.querySelector(".title-month").innerText = "Eventos del mes de "+meses[d.getMonth()];
+console.log(document.querySelectorAll(".title-month"));
